@@ -6,7 +6,7 @@ int main(){
     int i=0;
     int count[128]={0};
     scanf("%s",s);
-    int len = strlen(s);
+    
 
     for(i=0; s[i]!='\0'; i++){
         count[s[i]]++;

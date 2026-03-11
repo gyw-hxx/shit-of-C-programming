@@ -4,11 +4,12 @@ int main(){
     FILE *fp;
     int count = 0;
     char s1[50];
+    fp = fopen("test.txt","r");
+    
     if (fp == NULL){
         printf("文件打开失败");
         exit(1);
     }
-    fp = fopen("test.txt","r");
     while (fscanf(fp,"%s",s1)!=EOF){
             count++;
     }
