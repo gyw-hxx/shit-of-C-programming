@@ -35,7 +35,7 @@ int main(){
             head = p;
             tail = p;
         }else{
-            head -> next = p;
+            tail -> next = p;
             p -> prior = tail; //新节点的prior指向尾节点
             tail = p; 
         }

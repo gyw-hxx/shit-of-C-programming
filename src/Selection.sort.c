@@ -5,12 +5,12 @@ int main(){
     for (i=0; i<5; i++){
         min = i;
         for (j=i+1; j<5; j++){
-            if (a[j] < a[min]) //每一轮找最小元素 放在当前位置
+            if (a[j] < a[min]) //每一轮找最小元素
                 min = j;
            
         }
          if (min!=i){    
-                temp = a[i];
+                temp = a[i];   //放在当前位置
                 a[i] = a[min];
                 a[min] = temp;
             }
